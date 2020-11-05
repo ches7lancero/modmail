@@ -14,8 +14,8 @@ class onMessage(commands.Cog):
         
         if isinstance(message.channel, discord.DMChannel):
             guild = self.bot.get_guild(738535025770889216)
-            categ = utils.get(guild.categories, name v "Modmail tickets")
-            if not categ:
+            categ = utils.get(guild.categories, name = "Modmail tickets")
+            if not categ
                 overwrites = {
                       guild.default_role : discord.PermissionOverwrite(read_messages = False),
                       guild.me : discord.PermissionsOverwrite(read_messages = True)       
