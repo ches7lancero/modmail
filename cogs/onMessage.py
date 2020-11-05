@@ -1,5 +1,5 @@
 from discord.ext import commands
-from doscord import utils
+from discord import utils
 import discord
 import asyncio
 
