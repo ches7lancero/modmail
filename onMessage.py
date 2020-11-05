@@ -42,3 +42,13 @@ class onMessage(commands.Cog):
                         embed = discord.Embed(description = message.content, colour = 0x696969)
                         embed.set_author(name = message.author, icon_url = message.author.avatar_url)
                         await member.send(embed = embed)
+
+@commands.command()
+async def close(self, ctx):
+    if ctx.channel.category.name == "Modmail tickets":
+        await ctx.send("Delete the channel in 10 seconds")
+        await asyncio.sleep(10)
+        await.channel.delete
+        
+def setup(bot):
+    bot.add_cog(onMessage(bot))
