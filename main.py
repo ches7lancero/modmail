@@ -9,7 +9,7 @@ intents.members = true
 bot = commands.Bot(command_prefix = "!", intents = intents)
 
 @bot.event
-async def on_ready();
+async def on_ready():
     print("The bot is online!")
     bot.load_extension("cogs.onMessage")
 bot.run(os.environ.get("TOKEN"))
