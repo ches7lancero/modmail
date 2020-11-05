@@ -48,7 +48,7 @@ async def close(self, ctx):
     if ctx.channel.category.name == "Modmail tickets":
         await ctx.send("Delete the channel in 10 seconds")
         await asyncio.sleep(10)
-        await.channel.delete
+        await ctx.channel.delete
         
 def setup(bot):
     bot.add_cog(onMessage(bot))
